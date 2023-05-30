@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="56dp"
+        android:gravity="center"
+        android:text="Заказ билетов"
+        android:textColor="#068FB1"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idIn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <EditText
+        android:id="@+id/idIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Id пользователя"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/placeIn"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <EditText
+        android:id="@+id/placeIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint=" Место прибытия/отправления"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/timeIn"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <EditText
+        android:id="@+id/timeIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint=" Время прибытия/отправления"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/countIn"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <EditText
+        android:id="@+id/countIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="84dp"
+        android:background="#E1ECEF"
+        android:ems="10"
+        android:hint="Стоимость билета"
+        android:paddingStart="14sp"
+        android:textColor="#068FB1"
+        android:textColorHint="#87A3AA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#068FB1"
+        android:text="Оформить"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="45dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
